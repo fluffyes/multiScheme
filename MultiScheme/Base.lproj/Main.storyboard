@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiScheme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNY-6d-7x4">
+                                <rect key="frame" x="0.0" y="70" width="320" height="298"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdc-Tz-hO5">
+                                <rect key="frame" x="93" y="466" width="135" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="Load Random Fox"/>
+                                <connections>
+                                    <action selector="randomFoxTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGC-7m-8Th"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3zd-96-hSa">
+                                <rect key="frame" x="150" y="392" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yNY-6d-7x4" secondAttribute="trailing" id="FJp-pU-B7K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tdc-Tz-hO5" secondAttribute="bottom" constant="70" id="G25-9B-tdn"/>
+                            <constraint firstItem="3zd-96-hSa" firstAttribute="top" secondItem="yNY-6d-7x4" secondAttribute="bottom" constant="24" id="Kbr-be-fx7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yNY-6d-7x4" secondAttribute="bottom" constant="200" id="OjA-Zi-09I"/>
+                            <constraint firstItem="Tdc-Tz-hO5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Opg-Jz-RCV"/>
+                            <constraint firstItem="yNY-6d-7x4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tnm-fd-odT"/>
+                            <constraint firstItem="yNY-6d-7x4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="eWU-Cb-788"/>
+                            <constraint firstItem="3zd-96-hSa" firstAttribute="centerX" secondItem="yNY-6d-7x4" secondAttribute="centerX" id="muA-sF-VMu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="foxImageView" destination="yNY-6d-7x4" id="mmD-WT-BG0"/>
+                        <outlet property="loadingActivityIndicator" destination="3zd-96-hSa" id="F3m-tr-Neb"/>
+                        <outlet property="randomFoxButton" destination="Tdc-Tz-hO5" id="ocx-Uh-4qt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
