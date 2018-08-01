@@ -9,7 +9,11 @@
 import Foundation
 
 struct Endpoints {
+	#if DEVELOPMENT
 	static let baseURL = "https://fluffa.herokuapp.com/"
+	#else
+	static let baseURL = "https://randomfox.ca/"
+	#endif
 	
 	static func randomFox() -> URL {
 		return URL(string: Endpoints.baseURL + "floof")!

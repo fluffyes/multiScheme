@@ -12,6 +12,13 @@
 		0686F8E22110ECF600687BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E02110ECF600687BA6 /* Main.storyboard */; };
 		0686F8E42110ECF700687BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E32110ECF700687BA6 /* Assets.xcassets */; };
 		0686F8E72110ECF700687BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E52110ECF700687BA6 /* LaunchScreen.storyboard */; };
+		06AD371F2111BFAA0060AC67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686F8DE2110ECF600687BA6 /* ViewController.swift */; };
+		06AD37202111BFAA0060AC67 /* Fox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB631E2111AE7F008DB103 /* Fox.swift */; };
+		06AD37212111BFAA0060AC67 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB631B2111AC33008DB103 /* Endpoints.swift */; };
+		06AD37222111BFAA0060AC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0686F8DC2110ECF600687BA6 /* AppDelegate.swift */; };
+		06AD37252111BFAA0060AC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E52110ECF700687BA6 /* LaunchScreen.storyboard */; };
+		06AD37262111BFAA0060AC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E32110ECF700687BA6 /* Assets.xcassets */; };
+		06AD37272111BFAA0060AC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0686F8E02110ECF600687BA6 /* Main.storyboard */; };
 		06CB631C2111AC33008DB103 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB631B2111AC33008DB103 /* Endpoints.swift */; };
 		06CB631F2111AE7F008DB103 /* Fox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CB631E2111AE7F008DB103 /* Fox.swift */; };
 /* End PBXBuildFile section */
@@ -24,12 +31,21 @@
 		0686F8E32110ECF700687BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0686F8E62110ECF700687BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0686F8E82110ECF700687BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06AD372B2111BFAA0060AC67 /* MultiScheme Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MultiScheme Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AD372C2111BFAA0060AC67 /* MultiScheme copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MultiScheme copy-Info.plist"; path = "/Users/soul/Repository/iOS/derp/MultiScheme/MultiScheme copy-Info.plist"; sourceTree = "<absolute>"; };
 		06CB631B2111AC33008DB103 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		06CB631E2111AE7F008DB103 /* Fox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0686F8D62110ECF600687BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06AD37232111BFAA0060AC67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +60,7 @@
 			children = (
 				0686F8DB2110ECF600687BA6 /* MultiScheme */,
 				0686F8DA2110ECF600687BA6 /* Products */,
+				06AD372C2111BFAA0060AC67 /* MultiScheme copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0686F8D92110ECF600687BA6 /* MultiScheme.app */,
+				06AD372B2111BFAA0060AC67 /* MultiScheme Development.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +124,23 @@
 			productReference = 0686F8D92110ECF600687BA6 /* MultiScheme.app */;
 			productType = "com.apple.product-type.application";
 		};
+		06AD371D2111BFAA0060AC67 /* MultiScheme Development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06AD37282111BFAA0060AC67 /* Build configuration list for PBXNativeTarget "MultiScheme Development" */;
+			buildPhases = (
+				06AD371E2111BFAA0060AC67 /* Sources */,
+				06AD37232111BFAA0060AC67 /* Frameworks */,
+				06AD37242111BFAA0060AC67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiScheme Development";
+			productName = MultiScheme;
+			productReference = 06AD372B2111BFAA0060AC67 /* MultiScheme Development.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				0686F8D82110ECF600687BA6 /* MultiScheme */,
+				06AD371D2111BFAA0060AC67 /* MultiScheme Development */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +186,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06AD37242111BFAA0060AC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AD37252111BFAA0060AC67 /* LaunchScreen.storyboard in Resources */,
+				06AD37262111BFAA0060AC67 /* Assets.xcassets in Resources */,
+				06AD37272111BFAA0060AC67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -161,6 +207,17 @@
 				06CB631F2111AE7F008DB103 /* Fox.swift in Sources */,
 				06CB631C2111AC33008DB103 /* Endpoints.swift in Sources */,
 				0686F8DD2110ECF600687BA6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06AD371E2111BFAA0060AC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AD371F2111BFAA0060AC67 /* ViewController.swift in Sources */,
+				06AD37202111BFAA0060AC67 /* Fox.swift in Sources */,
+				06AD37212111BFAA0060AC67 /* Endpoints.swift in Sources */,
+				06AD37222111BFAA0060AC67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +393,43 @@
 			};
 			name = Release;
 		};
+		06AD37292111BFAA0060AC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDevelopment;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "MultiScheme copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.fluffy.MultiSchemeDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEVELOPMENT";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06AD372A2111BFAA0060AC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDevelopment;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "MultiScheme copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.fluffy.MultiSchemeDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +447,15 @@
 			buildConfigurations = (
 				0686F8EC2110ECF700687BA6 /* Debug */,
 				0686F8ED2110ECF700687BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06AD37282111BFAA0060AC67 /* Build configuration list for PBXNativeTarget "MultiScheme Development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06AD37292111BFAA0060AC67 /* Debug */,
+				06AD372A2111BFAA0060AC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

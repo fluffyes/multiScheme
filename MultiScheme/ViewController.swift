@@ -45,8 +45,8 @@ class ViewController: UIViewController {
 		self.loadingActivityIndicator.startAnimating()
 		self.loadingActivityIndicator.isHidden = false
 		
+		print("Base URL is \(Endpoints.baseURL)")
 		URLSession.shared.dataTask(with: Endpoints.randomFox(), completionHandler: { data, response, error in
-			print("response received")
 			// ensure there is no error for this HTTP response
 			guard error == nil else {
 				print ("error: \(error!)")
